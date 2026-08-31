@@ -21,9 +21,9 @@ export default function DashboardPage() {
 
   const generateAttack = async () => {
     setLoading(true);
+    const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
     try {
-      // Assuming API is running locally via Docker on port 8000
-      const res = await fetch('http://localhost:8000/api/v1/generate-campaign', {
+      const res = await fetch(`${API}/api/v1/generate-campaign`, {
         method: 'POST',
       });
       const data = await res.json();

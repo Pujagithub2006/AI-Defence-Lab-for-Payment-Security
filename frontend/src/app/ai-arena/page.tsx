@@ -11,8 +11,9 @@ export default function AIArenaPage() {
 
   const fetchDebate = async () => {
     setLoading(true);
+    const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
     try {
-      const res = await fetch('http://localhost:8000/api/v1/ai-debate');
+      const res = await fetch(`${API}/api/v1/ai-debate`);
       const data = await res.json();
       setTopic(data.topic);
       setDebate(data.debate);

@@ -13,7 +13,8 @@ export default function KnowledgeGraphPage() {
 
   useEffect(() => {
     // Fetch from backend
-    fetch('http://localhost:8000/api/v1/generate-campaign?attack_type=Mule%20Network%20Routing')
+    const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    fetch(`${API}/api/v1/generate-campaign?attack_type=Mule%20Network%20Routing`)
       .then(res => res.json())
       .then(data => {
         if(data.data?.graph_data) {
