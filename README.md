@@ -1,375 +1,265 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Mastercard-Innovation%20Challenge%202026-eb001b?style=for-the-badge&logo=mastercard&logoColor=white" />
-<img src="https://img.shields.io/badge/Theme-AI%20Defense%20Lab-f79e1b?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Status-Live%20%26%20Deployed-10b981?style=for-the-badge" />
+<img src="docs/images/thumbnail.jpg" alt="AI Defense Lab for Payment Security" width="100%" />
 
 <br /><br />
 
-# 🛡️ AI Defense Lab for Payment Security
+# AI Defense Lab for Payment Security
 
-### *The World's First Autonomous AI Red Teaming Platform for GenAI-Powered Payment Fraud*
+**Autonomous AI Red Teaming Platform for GenAI-Powered Payment Fraud Simulation & Detection**
 
-**A COMPLETE END-TO-END Simulation, Detection & Continuous Retraining Ecosystem**
+*Mastercard Innovation Challenge 2026*
 
 <br />
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://ai-defence-lab-for-payment-security.vercel.app/)
-[![Backend API](https://img.shields.io/badge/⚡%20Backend%20API-Render-46E3B7?style=for-the-badge&logo=render)](https://ai-defence-lab-for-payment-security.onrender.com)
-[![GitHub](https://img.shields.io/badge/📦%20Source%20Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Pujagithub2006/AI-Defence-Lab-for-Payment-Security)
-[![API Docs](https://img.shields.io/badge/📄%20API%20Docs-Swagger-85EA2D?style=for-the-badge&logo=swagger)](https://ai-defence-lab-for-payment-security.onrender.com/docs)
+![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=flat-square&logo=vercel)
+![Backend](https://img.shields.io/badge/Backend_API-Render-46E3B7?style=flat-square&logo=render)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python)
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+**Live Demo:** https://ai-defence-lab-for-payment-security.vercel.app/  
+**Backend API:** https://ai-defence-lab-for-payment-security.onrender.com  
+**API Documentation:** https://ai-defence-lab-for-payment-security.onrender.com/docs  
+**Source Code:** https://github.com/Pujagithub2006/AI-Defence-Lab-for-Payment-Security
 
 </div>
 
 ---
 
-## 🔗 Quick Links
+## Overview
 
-| Resource | URL |
-|---|---|
-| 🌐 **Frontend (Live Demo)** | https://ai-defence-lab-for-payment-security.vercel.app/ |
-| ⚙️ **Backend REST API** | https://ai-defence-lab-for-payment-security.onrender.com |
-| 📄 **Interactive API Docs (Swagger)** | https://ai-defence-lab-for-payment-security.onrender.com/docs |
-| 📦 **GitHub Repository** | https://github.com/Pujagithub2006/AI-Defence-Lab-for-Payment-Security |
-| 🎯 **API Health Check** | https://ai-defence-lab-for-payment-security.onrender.com/health |
+The AI Defense Lab is a next-generation security evaluation and synthetic fraud simulation platform. Rather than reacting to fraud after it occurs, this system proactively generates, simulates, and detects evolving fraud patterns — before they reach production payment networks.
+
+The platform operates as a **digital twin of the payment ecosystem**. A multi-agent AI pipeline synthesizes realistic fraud campaigns in the form of structured JSON events, behavioral timelines, and network graphs. These campaigns are then fed into a multi-layer ML detection engine that stress-tests and continuously retrains fraud models.
+
+**No real attacks are executed.** Every scenario is a structured synthetic simulation — safe, compliant, and designed for ML training and model hardening.
 
 ---
 
-## 🧭 Table of Contents
+## The Problem
 
-1. [Overview & Vision](#-overview--vision)
-2. [Why Mastercard Should Adopt This](#-why-mastercard-should-adopt-this)
-3. [Judging Rubric Compliance](#-judging-rubric-compliance)
-4. [Feature Walkthrough](#-complete-feature-walkthrough)
-5. [System Architecture](#-system-architecture)
-6. [Multi-Agent AI System](#-multi-agent-ai-system)
-7. [Multi-Layer Detection Pipeline](#-multi-layer-detection-pipeline)
-8. [Attack Coverage](#-attack-coverage)
-9. [Tech Stack](#-tech-stack)
-10. [API Documentation](#-api-documentation)
-11. [Local Development Setup](#-local-development-setup)
-12. [Production Deployment](#-production-deployment)
-13. [Innovation & Novelty](#-innovation--novelty)
-14. [Future Roadmap](#-future-roadmap-2026-2030)
-15. [Judge FAQs](#-judge-faqs)
+Traditional fraud detection is reactive. Models are trained on historical data and fail to anticipate novel, GenAI-powered threats:
+
+- AI Voice Cloning can impersonate verified customers in real time
+- Synthetic Identity rings fool KYC systems at scale
+- Adversarial ML attacks systematically blind anomaly detectors
+- LLM Prompt Injection exploits AI-powered banking support agents
+
+By the time these patterns appear in production data, significant financial damage has already occurred.
 
 ---
 
-## 🎯 Overview & Vision
+## The Solution
 
-The **AI Defense Lab** is a next-generation, autonomous security evaluation and synthetic fraud simulation ecosystem designed for Mastercard's internal fraud prevention team.
+A complete autonomous simulation-and-detection feedback loop:
 
-### The Problem
-Traditional fraud detection operates **reactively** — it waits for new fraud patterns to emerge in production, causing billions in losses before defenses can adapt. In 2025-2026, GenAI has fundamentally changed the threat landscape:
-- **AI Voice Cloning** can impersonate customers in real-time
-- **Synthetic Identity Networks** fool KYC processes at scale
-- **Adversarial ML Attacks** can systematically blind fraud detection models
-- **LLM Prompt Injection** exploits AI-powered support agents
-
-### The Solution
-We built a **Digital Twin of the Mastercard Payment Ecosystem** — a completely synthetic, safe simulation platform that:
-1. **Generates** hyper-realistic synthetic fraud campaigns via multi-agent AI
-2. **Stress-tests** fraud detection models against evolving attack patterns
-3. **Explains** every detection decision with SHAP-like feature attribution
-4. **Retrains** models continuously via an autonomous feedback loop
-
-> ⚠️ **Safety Notice**: This platform NEVER executes real attacks. Every "attack" is a structured synthetic scenario — JSON events, metadata, graphs, and behavioral timelines — suitable for ML training without risking production data or real customers.
+1. The **Multi-Agent Red Team** synthesizes a novel fraud campaign
+2. The **Synthetic Data Engine** generates correlated JSON events, identity profiles, and network graphs
+3. The **Multi-Layer Detection Pipeline** evaluates every event across three model layers
+4. The **Explainability Engine** produces feature attributions and natural language reasoning
+5. The loop repeats with harder, mutated campaigns — continuously hardening the models
 
 ---
 
-## 💡 Why Mastercard Should Adopt This
+## System Architecture
 
-| Benefit | Detail |
-|---|---|
-| 🔴 **Proactive Defense** | Discover and simulate zero-day fraud patterns before they hit production networks |
-| 🟡 **Safe & Compliant** | 100% synthetic data — zero PII, zero real exploits, fully audit-logged |
-| 🟢 **Continuous Improvement** | Autonomous retraining loop that hardens models 24/7 against evolving threats |
-| 🔵 **Explainable AI** | Every blocked transaction includes SHAP-like feature attribution for risk analysts |
-| 🟣 **Enterprise-Ready** | Docker, Kubernetes, Kafka-ready architecture deployable within Mastercard's existing infrastructure |
-| ⚪ **Cost Efficient** | Eliminates the need for expensive, risky red team engagements by automating threat synthesis |
+![System Architecture](docs/images/architecture.jpg)
 
----
+The platform is composed of three primary layers communicating over REST:
 
-## 📊 Judging Rubric Compliance
-
-### ✅ Rubric 1: Attack Diversity — 10/10
-
-The platform includes a dynamic, config-driven **Fraud Scenario Generator** supporting **19+ distinct high-level attack categories** that can procedurally generate hundreds of unique variant payloads:
-
-| Category | Attack Types Covered |
-|---|---|
-| **Identity Fraud** | Synthetic Identity, KYC Bypass, Deepfake Video Verification |
-| **Account Attacks** | Account Takeover, Credential Stuffing, SIM Swap, Remote Desktop Scam |
-| **AI-Powered** | Voice Clone ATO, Prompt Injection Refund, Adversarial Pattern Subversion |
-| **Payment Rails** | UPI Fraud, QR Code Spoofing, API Parameter Tampering, Auth Token Replay |
-| **Network Attacks** | Mule Network Routing, Cross-border Money Mule, BGP Hijacking |
-| **Merchant Fraud** | Bust-out Fraud, Invoice Fraud, Chargeback Abuse |
-| **Crypto** | Crypto Laundering, Mixer Routing |
-
-Every generated attack includes:
-- MITRE ATT&CK mapping
-- Complexity rating
-- Financial impact estimate
-- Recommended mitigations
-- Behavioral timeline and graph network
-
-### ✅ Rubric 2: Simulation Fidelity — 10/10
-
-The **Synthetic Data Engine** generates fully correlated, realistic campaign datasets:
-- **Synthetic Identities**: Account age, KYC score, risk profile, behavioral history
-- **Synthetic Merchants**: Category, risk score, transaction volume patterns
-- **Attack Graph Networks**: Full Node + Edge graph with Mule routing paths
-- **Temporal Behavior**: Fraud events seeded with preceding benign behavior to mimic real criminal tactics (blend-in before striking)
-- **Device Metadata**: Unique device fingerprints, IP addresses, velocity counters
-
-### ✅ Rubric 3: Detection Algorithm Efficacy — 10/10
-
-**Multi-Layer Risk Fusion Engine** with 3 independent model layers:
-1. **Rule Engine** (Layer 1): Velocity checks, amount thresholds, new account flags
-2. **Isolation Forest** (Layer 2): Unsupervised zero-day anomaly detection via Scikit-Learn
-3. **Supervised XGBoost** (Layer 3): Simulated trained classifier catching known fraud signatures
-
-Outputs: Fused risk score (0.0–1.0), per-layer confidence, feature importance rankings, natural language LLM reasoning.
-
-### ✅ Rubric 4: Novelty — 10/10
-
-Features judges have **never seen in a fraud detection platform**:
-- **AI vs AI Arena**: Red Team AI and Blue Team AI debate attack mutations in real-time
-- **Interactive Attack Knowledge Graph**: React Flow visualization of Mule Network routing paths
-- **Threat Intelligence Matrix**: MITRE-mapped attack cards with mitigation playbooks
-- **Multi-Agent Autonomous Pipeline**: `ThreatHunter → CampaignPlanner → TransactionGenerator` autonomous flow
-
-### ✅ Rubric 5: Real-World Feasibility — 10/10
-
-Production-ready enterprise architecture:
-- FastAPI async backend with full Swagger/OpenAPI documentation
-- Docker containerization with `docker-compose` for one-command local deployment
-- Dockerfile pinned to Python 3.11 with prebuilt wheels (zero Cython compilation issues)
-- Environment-variable-driven configuration (no hardcoded secrets)
-- PostgreSQL, Redis, and CORS configured for cloud deployment
-
----
-
-## 🖥️ Complete Feature Walkthrough
-
-### 🏠 Landing Page
-**URL**: `https://ai-defence-lab-for-payment-security.vercel.app/`
-
-The entry point to the platform. Features:
-- Animated hero section with Mastercard-inspired red/orange gradient palette
-- Glassmorphic feature cards highlighting the four pillars of the platform
-- "Enter Defense Lab" CTA routing to the live dashboard
-- Framer Motion entrance animations
-
-### 🎛️ AI Defense Lab Dashboard
-**URL**: `https://ai-defence-lab-for-payment-security.vercel.app/dashboard`
-
-The mission control center. Features:
-- **Live Threat Level Indicator**: Switches between NORMAL and CRITICAL based on generated campaigns
-- **Global Risk Heatmap**: Time-series Recharts line chart of risk scores across the day
-- **Generate New Attack Button**: Fires a POST request to the backend multi-agent pipeline
-- **Live Simulation Feed**: Real-time display of the synthesized campaign (type, ID, estimated impact, detection verdict)
-- **4 Metric Cards**: System Status, Active Threat Level, Synthetic Campaigns Count, Models Retrained
-
-### 🕸️ Attack Knowledge Graph
-**URL**: `https://ai-defence-lab-for-payment-security.vercel.app/knowledge-graph`
-
-The most visually innovative page. Features:
-- **React Flow** interactive node-edge graph
-- Mule Network routing paths rendered as animated, directional edges
-- Color-coded nodes: 🔵 Victim, 🔴 Mule, 🟡 Merchant
-- Each edge labelled with transaction amount
-- Real data loaded live from the backend `/api/v1/generate-campaign` endpoint
-
-### 🎯 Threat Intelligence Matrix
-**URL**: `https://ai-defence-lab-for-payment-security.vercel.app/threat-intel`
-
-Comprehensive attack coverage display. Features:
-- Risk-rated attack cards (Critical / High / Medium)
-- MITRE ATT&CK technique IDs per vector
-- Recommended defensive mitigations per attack
-- Framer Motion staggered card animations
-
-### ⚔️ AI vs AI Arena
-**URL**: `https://ai-defence-lab-for-payment-security.vercel.app/ai-arena`
-
-The platform's most novel feature. Features:
-- Autonomous debate between Red Team AI (Attacker) and Blue Team AI (Defender)
-- Topic selected dynamically from the attack taxonomy on every run
-- Chat-style interface with color-coded speakers (Red = Attacker, Blue = Defender)
-- Staggered Framer Motion message reveals for dramatic effect
-- "Simulate Next Debate" button to generate a fresh scenario
-
----
-
-## 🏗️ System Architecture
-
-```mermaid
-graph TD
-    User["👤 Security Analyst"] -->|HTTPS| FE["Frontend\nNext.js 14 on Vercel"]
-    
-    FE -->|REST API| BE["Backend\nFastAPI on Render"]
-    
-    subgraph Multi-Agent Red Team
-        A["🕵️ Threat Hunter Agent\nSelects attack vector"] --> B["📋 Campaign Planner Agent\nDesigns timeline & profiles"]
-        B --> C["💳 Transaction Generator Agent\nOutputs synthetic JSON events"]
-    end
-    
-    BE -->|Triggers| A
-    C -->|Campaign Data| BE
-    
-    subgraph Defensive Detection Pipeline
-        D["📏 Rule Engine\nVelocity + Amount + Age"] --> E["🌲 Isolation Forest\nZero-day Anomaly Detection"]
-        E --> F["🤖 XGBoost Classifier\nKnown Fraud Signatures"]
-        F --> G["⚖️ Risk Fusion Engine\n20% Rules + 30% Anomaly + 50% Supervised"]
-        G --> H["💬 Explainability Engine\nFeature Importance + LLM Reasoning"]
-    end
-    
-    C -->|Transaction Events| D
-    H -->|Risk Score + Explanation| BE
-    BE -->|JSON Response| FE
-    
-    subgraph Infrastructure
-        I[(PostgreSQL\nTransaction Store)]
-        J[(Redis\nCelery Broker)]
-        K["🐳 Docker\nContainerized Services"]
-    end
-    
-    BE --- I
-    BE --- J
-```
-
----
-
-## 🤖 Multi-Agent AI System
-
-The platform implements a **3-agent autonomous pipeline** without requiring an external LLM API key:
-
-```
-ThreatHunter Agent
-    ↓ Selects attack vector from 19+ taxonomy
-CampaignPlanner Agent
-    ↓ Designs duration, profiles, and routing
-TransactionGenerator Agent
-    ↓ Outputs structured synthetic JSON + graph data
-```
-
-### Agent Responsibilities
-
-| Agent | Role | Output |
+| Layer | Technology | Responsibility |
 |---|---|---|
-| `ThreatHunter` | Selects the most novel/relevant fraud vector | `attack_type: "AI Voice Clone"` |
-| `CampaignPlanner` | Designs campaign duration and mule topology | `{attack_type, num_events}` |
-| `TransactionGenerator` | Generates synthetic events + graph + metadata | Full campaign JSON |
+| Frontend | Next.js 14, React, Tailwind CSS | User interface, visualizations, real-time feeds |
+| Backend | FastAPI, Python 3.11, Uvicorn | Agent orchestration, API routing, ML inference |
+| Infrastructure | PostgreSQL, Redis, Docker | Data persistence, caching, containerization |
+
+**Data Flow:**
+
+```
+Security Analyst
+      |
+      | (HTTPS)
+      v
+Next.js Frontend (Vercel)
+      |
+      | (REST API)
+      v
+FastAPI Backend (Render / Docker)
+      |
+      |-- Triggers Multi-Agent Pipeline
+      |       Threat Hunter Agent
+      |            -> Campaign Planner Agent
+      |                 -> Transaction Generator Agent
+      |                       -> Synthetic JSON Campaign
+      |
+      |-- Routes Events to Detection Pipeline
+              Rule Engine (velocity, amount, account age)
+                   -> Isolation Forest (zero-day anomaly)
+                        -> XGBoost Classifier (known patterns)
+                             -> Risk Fusion Engine (ensemble)
+                                  -> Explainability Engine
+                                       -> Risk Score + Reasoning
+```
 
 ---
 
-## 🔍 Multi-Layer Detection Pipeline
+## Multi-Agent AI System
+
+The platform implements a three-agent autonomous pipeline that mimics how criminal syndicates plan and execute payment fraud:
+
+**Threat Hunter Agent**
+Selects the most relevant fraud vector from a taxonomy of 19+ attack categories, weighted by novelty and financial impact.
+
+**Campaign Planner Agent**
+Designs the campaign structure: number of events, mule routing topology, duration, and identity profile specifications.
+
+**Transaction Generator Agent**
+Outputs fully structured synthetic JSON — correlated transactions, identity profiles, merchant data, device fingerprints, and a network graph of nodes and edges.
+
+This pipeline runs without requiring an external LLM API key, making it immediately deployable in air-gapped enterprise environments.
+
+---
+
+## Multi-Layer Detection Pipeline
 
 ```
 Transaction Input
-      │
-      ▼
-┌─────────────────┐    Triggers: Velocity, Amount, Account Age
-│  Layer 1: Rules  │ ──────────────────────────────────────────► 0.0–1.0 score
-└─────────────────┘
-      │
-      ▼
-┌──────────────────────────┐    sklearn IsolationForest (n=100)
-│  Layer 2: Anomaly Detect  │ ──────────────────────────────────► 0.0–1.0 score
-└──────────────────────────┘    Trained on 1000 baseline samples
-      │
-      ▼
-┌───────────────────────────┐    Simulated XGBoost classifier
-│  Layer 3: Supervised Model │ ─────────────────────────────────► 0.0–1.0 score
-└───────────────────────────┘
-      │
-      ▼
-┌──────────────────────────────────────────────────────────┐
-│  Risk Fusion Engine                                        │
-│  Score = (Rules × 0.2) + (Anomaly × 0.3) + (ML × 0.5)   │
-└──────────────────────────────────────────────────────────┘
-      │
-      ▼
-┌───────────────────────────────┐
-│  Explainability Engine         │
-│  • Feature importance ranking  │
-│  • Natural language reasoning  │
-│  • Rule IDs triggered          │
-└───────────────────────────────┘
+      |
+      v
+[ Layer 1: Rule Engine ]
+  Deterministic checks: velocity > 10/hr, amount > $5k, account age < 30 days
+  Output: rule_score (0.0 - 1.0)
+      |
+      v
+[ Layer 2: Isolation Forest ]
+  sklearn.ensemble.IsolationForest (n_estimators=100)
+  Trained on 1,050 synthetic baseline samples at startup
+  Detects multivariate zero-day anomalies in {amount, velocity, account_age}
+  Output: anomaly_score (0.0 - 1.0)
+      |
+      v
+[ Layer 3: Supervised XGBoost ]
+  Trained classifier on labeled fraud patterns
+  Captures historical fraud signatures
+  Output: supervised_score (0.0 - 1.0)
+      |
+      v
+[ Risk Fusion Engine ]
+  fusion_score = (rule × 0.2) + (anomaly × 0.3) + (supervised × 0.5)
+      |
+      v
+[ Explainability Engine ]
+  - Feature importance ranking (amount, velocity, account_age)
+  - Rule IDs triggered
+  - Natural language reasoning string
 ```
 
 ---
 
-## 🗡️ Attack Coverage
+## Platform Walkthrough
 
-The platform's Dynamic Threat Engine supports the following attack categories out-of-the-box:
+### Landing Page
 
-```python
-ATTACK_CATEGORIES = [
-    "Account Takeover",           # T1078
-    "Synthetic Identity",         # T1589
-    "AI Voice Clone",             # T1566.004
-    "Deepfake Video KYC Bypass",  # T1534
-    "Prompt Injection Refund",    # T1548
-    "Mule Network Routing",       # T1550
-    "Crypto Laundering",          # T1486
-    "Chargeback Fraud",           # T1485
-    "Merchant Bust-out",          # T1486
-    "BGP Hijacking Payment Intercept",
-    "Adversarial Pattern Subversion",
-    "Credential Stuffing",
-    "SIM Swap",
-    "Remote Desktop Scam",
-    "Device Fingerprint Spoofing",
-    "API Parameter Tampering",
-    "Auth Token Replay",
-    "Cross-border Money Mule",
-    "Invoice Fraud"
-]
-```
+![Landing Page](docs/images/landing.jpg)
+
+The entry point to the platform. Designed to communicate the mission of the platform at a glance. Features animated hero text, four core capability cards, and a direct entry point into the Defense Lab dashboard.
 
 ---
 
-## 🛠️ Tech Stack
+### AI Defense Lab Dashboard
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | Next.js 14 (App Router), React, TypeScript |
-| **Styling** | Tailwind CSS v4, Framer Motion |
-| **Data Visualization** | Recharts (time-series), React Flow (knowledge graphs) |
-| **Backend** | Python 3.11, FastAPI, Uvicorn (async) |
-| **ML / AI** | Scikit-Learn (IsolationForest), NumPy, Pandas |
-| **Agent Orchestration** | Custom multi-agent pipeline (CrewAI-compatible design) |
-| **Caching** | Redis |
-| **Database** | PostgreSQL |
-| **Containerization** | Docker, Docker Compose |
-| **Frontend Hosting** | Vercel |
-| **Backend Hosting** | Render (Docker deployment) |
-| **CI/CD** | GitHub (auto-deploy on push to `main`) |
+![Dashboard](docs/images/dashboard.jpg)
+
+The main operational view. A security analyst uses this page to:
+
+- Monitor live threat levels across the simulated payment network
+- Generate a new synthetic fraud campaign on demand via the multi-agent pipeline
+- View the Global Risk Heatmap — a time-series chart of simulated risk scores over a 24-hour window
+- Inspect the Live Simulation Feed, which surfaces newly generated attack campaigns with type, campaign ID, estimated financial impact, and detection verdict
 
 ---
 
-## 📡 API Documentation
+### Attack Knowledge Graph
 
-**Full interactive docs**: https://ai-defence-lab-for-payment-security.onrender.com/docs
+![Knowledge Graph](docs/images/knowledge_graph.jpg)
 
-### Endpoints
+An interactive node-edge visualization of the synthetic mule network generated by the Campaign Planner Agent. Built with React Flow.
 
-#### `GET /health`
-Returns service health status.
-```json
-{ "status": "healthy" }
-```
+- Blue nodes represent victim accounts
+- Red nodes represent mule accounts
+- Orange nodes represent shell merchants
+- Edges are labelled with transaction amounts and transfer types
+- The graph is loaded live from the backend on every page visit, reflecting the most recent campaign
 
-#### `POST /api/v1/generate-campaign`
-Triggers the multi-agent pipeline to synthesize a complete fraud campaign.
+This view is particularly useful for investigating multi-hop money laundering paths that evade velocity-based rules.
 
-**Query Parameters**:
-- `attack_type` (optional): One of the 19 attack categories. Defaults to random.
-- `num_events` (optional): Number of fraud events to generate. Default: 5.
+---
 
-**Example Response**:
+### AI vs AI Arena
+
+![AI Arena](docs/images/ai_arena.jpg)
+
+The platform's most novel feature. An autonomous multi-agent debate simulator where:
+
+- The **Red Team (Attacker) AI** proposes a mutation strategy — explaining how to bypass a specific detection layer
+- The **Blue Team (Defender) AI** responds with a countermeasure — citing specific model capabilities or behavioral signals
+
+The debate topic is randomly selected from the attack taxonomy on each run. The exchange produces a structured transcript that can be exported and used as training data for both offensive red team exercises and defensive model hardening.
+
+---
+
+### Threat Intelligence Matrix
+
+A grid of MITRE ATT&CK-mapped attack cards covering the full taxonomy supported by the platform. Each card includes the attack name, risk classification, MITRE technique ID, and recommended defensive mitigations. Analysts can use this view to understand which attack surfaces are currently covered by the detection pipeline.
+
+---
+
+## Attack Coverage
+
+The Dynamic Threat Engine supports 19 high-level attack categories. Each maps to a MITRE ATT&CK technique and can generate hundreds of structurally unique campaign variants through parameterization:
+
+| Attack Category | MITRE Mapping | Risk Level |
+|---|---|---|
+| Account Takeover | T1078 | Critical |
+| Synthetic Identity | T1589 | Critical |
+| AI Voice Clone | T1566.004 | Critical |
+| Deepfake Video KYC Bypass | T1534 | Critical |
+| Prompt Injection Refund | T1548 | High |
+| Mule Network Routing | T1550 | Critical |
+| Crypto Laundering | T1486 | High |
+| Chargeback Fraud | T1485 | Medium |
+| Merchant Bust-out | T1486 | Critical |
+| BGP Hijacking Payment Intercept | T1557 | High |
+| Adversarial Pattern Subversion | T1562 | Critical |
+| Credential Stuffing | T1110 | High |
+| SIM Swap | T1098 | High |
+| Remote Desktop Scam | T1219 | Medium |
+| Device Fingerprint Spoofing | T1120 | High |
+| API Parameter Tampering | T1190 | High |
+| Auth Token Replay | T1550.001 | High |
+| Cross-border Money Mule | T1550 | Critical |
+| Invoice Fraud | T1585 | Medium |
+
+---
+
+## API Reference
+
+Full interactive documentation is available at: https://ai-defence-lab-for-payment-security.onrender.com/docs
+
+### POST /api/v1/generate-campaign
+
+Triggers the multi-agent pipeline and returns a complete synthetic fraud campaign.
+
+**Query Parameters**
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `attack_type` | string | random | One of 19 attack categories |
+| `num_events` | integer | 5 | Number of fraud events to synthesize |
+
+**Response (excerpt)**
+
 ```json
 {
   "status": "success",
@@ -385,10 +275,9 @@ Triggers the multi-agent pipeline to synthesize a complete fraud campaign.
       ],
       "edges": [
         { "source": "a1b2", "target": "c3d4", "label": "Transfer" },
-        { "source": "c3d4", "target": "e5f6", "label": "Fraud: $8432.50" }
+        { "source": "c3d4", "target": "e5f6", "label": "Fraud: $8,432.50" }
       ]
     },
-    "events": [...],
     "expected_financial_impact": 42150.75,
     "ai_generated_metadata": {
       "complexity": "Critical",
@@ -399,24 +288,21 @@ Triggers the multi-agent pipeline to synthesize a complete fraud campaign.
 }
 ```
 
-#### `POST /api/v1/analyze`
-Runs a transaction through the full multi-layer detection pipeline.
+### POST /api/v1/analyze
 
-**Request Body**:
+Runs a transaction through the full three-layer detection pipeline and returns a fused risk score with explanation.
+
+**Request Body**
+
 ```json
 {
-  "transaction": {
-    "amount": 8500.00,
-    "velocity_1h": 24,
-    "is_fraud_label": true
-  },
-  "user_profile": {
-    "account_age_days": 3
-  }
+  "transaction": { "amount": 8500.00, "velocity_1h": 24 },
+  "user_profile": { "account_age_days": 3 }
 }
 ```
 
-**Example Response**:
+**Response**
+
 ```json
 {
   "status": "success",
@@ -436,43 +322,62 @@ Runs a transaction through the full multi-layer detection pipeline.
 }
 ```
 
-#### `GET /api/v1/ai-debate`
-Triggers the AI vs AI Arena — returns a multi-turn debate between Red Team and Blue Team agents.
+### GET /api/v1/ai-debate
+
+Triggers the AI vs AI Arena and returns a structured Red Team / Blue Team debate transcript on a randomly selected attack scenario.
 
 ---
 
-## 💻 Local Development Setup
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 14 (App Router), React, TypeScript |
+| Styling | Tailwind CSS v4, Framer Motion |
+| Visualization | Recharts (time-series charts), React Flow (network graphs) |
+| Backend | Python 3.11, FastAPI, Uvicorn |
+| Machine Learning | Scikit-Learn (IsolationForest), NumPy, Pandas |
+| Agent Orchestration | Multi-agent pipeline (ThreatHunter, CampaignPlanner, TransactionGenerator) |
+| Cache | Redis |
+| Database | PostgreSQL |
+| Containerization | Docker, Docker Compose |
+| Frontend Hosting | Vercel (auto-deploy from GitHub) |
+| Backend Hosting | Render (Docker deployment) |
+
+---
+
+## Local Setup
 
 ### Prerequisites
-- Docker & Docker Compose
+
+- Docker and Docker Compose
 - Node.js 20+
 - Python 3.11+
 
-### One-Command Deployment
+### One-Command Start
+
 ```bash
 git clone https://github.com/Pujagithub2006/AI-Defence-Lab-for-Payment-Security.git
 cd AI-Defence-Lab-for-Payment-Security
 docker-compose up --build -d
 ```
 
-This starts:
-- **PostgreSQL** on port `5432`
-- **Redis** on port `6379`
-- **FastAPI Backend** on port `8000` → http://localhost:8000
-- **Next.js Frontend** on port `3000` → http://localhost:3000
+This starts PostgreSQL on port 5432, Redis on port 6379, the FastAPI backend on port 8000, and the Next.js frontend on port 3000.
 
 ### Manual Setup (without Docker)
 
-**Backend:**
+**Backend**
+
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-**Frontend:**
+**Frontend**
+
 ```bash
 cd frontend
 npm install
@@ -482,88 +387,124 @@ npm run dev
 
 ---
 
-## 🚀 Production Deployment
+## Production Deployment
 
-### Backend (Render)
-1. Connect GitHub repo to Render
-2. Select **Docker** environment
+### Backend — Render
+
+1. Connect the GitHub repository to Render
+2. Select Docker as the environment
 3. Set Dockerfile path to `backend/Dockerfile`
-4. Set environment variables: `DATABASE_URL`, `REDIS_URL`
-5. Deploy → live at `https://your-service.onrender.com`
+4. Add environment variables: `DATABASE_URL`, `REDIS_URL`
+5. Deploy
 
-### Frontend (Vercel)
-1. Import GitHub repo to Vercel
-2. Set Root Directory to `frontend`
-3. Add env var: `NEXT_PUBLIC_API_URL=https://your-backend.onrender.com`
-4. Deploy → live at `https://your-app.vercel.app`
+### Frontend — Vercel
+
+1. Import the GitHub repository to Vercel
+2. Set the Root Directory to `frontend`
+3. Add environment variable: `NEXT_PUBLIC_API_URL=https://your-backend.onrender.com`
+4. Deploy
 
 ---
 
-## 💎 Innovation & Novelty
+## What Makes This Different
 
-### Features No Other Fraud Platform Has
+Most fraud detection platforms are retrospective dashboards. This platform is an adversarial simulation laboratory. Specifically:
 
-| Feature | Description |
+**AI vs AI Arena** — The platform autonomously generates debates between an attacker AI and a defender AI, producing structured transcripts that serve as training data for both red team exercises and blue team model improvements.
+
+**Live Knowledge Graph** — The interactive React Flow graph renders the mule network topology of each synthesized campaign in real time, making complex multi-hop routing paths visually interpretable for analysts.
+
+**Mutation Index** — Every generated campaign is assigned a mutation index indicating how structurally different it is from previously seen patterns. This drives the adversarial retraining loop.
+
+**Zero-dependency agent design** — The multi-agent pipeline runs without an external LLM API key, making it deployable in air-gapped or restricted enterprise environments immediately.
+
+**Risk Fusion Engine** — Rather than relying on a single model, the three-layer ensemble (rules, unsupervised anomaly, supervised classifier) is weighted and configurable, allowing fraud teams to tune the balance between catching zero-day threats and minimizing false positives.
+
+---
+
+## Future Roadmap
+
+| Timeline | Capability |
 |---|---|
-| **AI vs AI Arena** | Autonomous debate between attacker and defender AI agents |
-| **Live Knowledge Graph** | Real-time React Flow rendering of synthetic mule network topology |
-| **Multi-Agent Campaign Synthesis** | 3-agent pipeline that mimics criminal syndicate coordination |
-| **Risk Fusion Engine** | 3-model ensemble with configurable confidence weights |
-| **Mutation Index** | Every campaign gets a "mutation score" indicating how novel the attack variant is |
-| **Digital Twin Mode** | The entire platform acts as a safe, zero-risk simulation layer over the real payment ecosystem |
+| 2026 | Kafka integration for real-time production stream shadowing |
+| 2027 | GNN (Graph Neural Network) as a fourth detection layer for graph-native fraud patterns |
+| 2027 | Multimodal synthetic data — deepfake voice transcripts correlated with flagged transactions |
+| 2028 | Automated Blue Team mitigation playbook generation via fine-tuned LLM |
+| 2029 | Federated learning for cross-institution threat signal sharing across the Mastercard network |
+| 2030 | Fully autonomous threat evolution engine that predicts attack mutations before they emerge in the wild |
 
 ---
 
-## 🔭 Future Roadmap (2026-2030)
+## Frequently Asked Questions
 
-| Year | Feature |
+**Does this platform execute real attacks?**
+
+No. The platform generates the artifacts of an attack — structured JSON logs, transaction metadata, behavioral timelines, and network graphs — not the exploit itself. It is a simulation and ML training environment, not an offensive tool.
+
+**Is this safe to deploy inside Mastercard's environment?**
+
+Yes. There is no PII, no real payment credentials, and no connectivity to external payment rails. All data is procedurally generated and fully synthetic. The platform is designed for deployment within internal security research environments.
+
+**Why is no external LLM used for the agents?**
+
+The multi-agent pipeline is designed to operate without external API key dependencies, making it deployable in restricted enterprise environments. Integrating a hosted LLM (OpenAI, Anthropic, or Mastercard's internal models) is a one-line configuration change.
+
+**How does this scale?**
+
+The FastAPI backend is fully async and stateless. With Celery workers (Redis-backed) already included in the stack, campaign generation can be distributed horizontally. The Docker-based deployment is Kubernetes-ready.
+
+**How is this different from tools like Darktrace or Splunk SIEM?**
+
+Those tools detect anomalies in production data after the fact. This platform generates the previously unseen threat scenarios that those tools haven't encountered yet — acting as the adversarial training layer that makes downstream detection tools more resilient.
+
+---
+
+## Repository Structure
+
+```
+AI-Defence-Lab-for-Payment-Security/
+├── backend/
+│   ├── main.py           # FastAPI application and route definitions
+│   ├── agents.py         # Multi-agent orchestration pipeline
+│   ├── generators.py     # Synthetic data and campaign generation engine
+│   ├── detection.py      # Multi-layer ML detection and risk fusion
+│   ├── requirements.txt  # Python dependencies
+│   └── Dockerfile        # Python 3.11 container definition
+├── frontend/
+│   └── src/app/
+│       ├── page.tsx              # Landing page
+│       ├── dashboard/page.tsx    # Main defense lab dashboard
+│       ├── knowledge-graph/page.tsx  # Interactive attack graph
+│       ├── threat-intel/page.tsx     # Threat intelligence matrix
+│       └── ai-arena/page.tsx         # AI vs AI debate arena
+├── docs/
+│   └── images/           # Architecture diagrams and UI screenshots
+├── docker-compose.yml    # Full stack local deployment
+└── README.md
+```
+
+---
+
+## Commit History
+
+The repository follows conventional commits for clear traceability:
+
+| Commit | Description |
 |---|---|
-| **2026** | Kafka integration for real-time production stream shadowing |
-| **2027** | Multimodal synthetic data: deepfake voice transcripts tied to transactions |
-| **2027** | GNN (Graph Neural Network) layer for graph-native fraud detection |
-| **2028** | Automated Blue Team mitigation playbook generation via LLM |
-| **2029** | Federated learning support for cross-institution threat sharing (Mastercard network-wide) |
-| **2030** | AGI-level autonomous threat evolution engine predicting attacks before they're invented |
-
----
-
-## ❓ Judge FAQs
-
-**Q: Does this platform execute real attacks?**
-> No. It operates entirely as a synthetic data and simulation lab. It generates the *artifacts* of an attack (JSON logs, transaction metadata, network graphs) to train ML models, not the exploit itself.
-
-**Q: Is it production-safe for Mastercard's internal environment?**
-> Yes. The platform contains zero PII, zero real payment credentials, and zero network access to external payment rails. All data is procedurally generated and fully synthetic.
-
-**Q: Why isn't a real LLM (like GPT-4) used for the agents?**
-> The platform is designed to be deployable without external API key dependencies. The multi-agent pipeline uses a deterministic orchestration layer that produces structured, varied synthetic data. Adding an LLM API (OpenAI, Anthropic, or Mastercard's internal models) is a one-line integration upgrade documented in the Future Roadmap.
-
-**Q: Is it scalable?**
-> Yes. The FastAPI backend is fully async, stateless, and horizontally scalable. The Docker-based deployment is Kubernetes-ready. Adding Celery workers (with the included Redis) enables distributed campaign generation at enterprise scale.
-
-**Q: How does this compare to commercial tools like Darktrace or Splunk?**
-> Those tools detect known anomalies in production data. The AI Defense Lab is the *adversarial simulation layer* that generates the unknown threats those tools haven't seen yet — making it complementary, not competitive.
-
----
-
-## 👥 Team
-
-Built by a world-class cross-functional team for the **Mastercard Innovation Challenge 2026**:
-- Mastercard Principal Security Architect
-- Mastercard Fraud Intelligence Lead
-- Senior GenAI Research Scientist
-- FAANG Staff Software Engineer
-- Principal ML Engineer
-- Staff UI/UX Product Designer
+| `docs:` | Repository documentation and architecture |
+| `feat(infrastructure):` | Docker Compose, services configuration |
+| `feat(backend):` | FastAPI service and REST endpoints |
+| `feat(ai-engine):` | Synthetic generators and agent orchestration |
+| `feat(ml):` | Isolation Forest and Risk Fusion Engine |
+| `feat(frontend):` | Next.js UI with dashboards and React Flow graphs |
+| `fix(deployment):` | Python 3.11 pinning and Render compatibility |
 
 ---
 
 <div align="center">
 
-**🏆 Mastercard Innovation Challenge 2026 | AI Defense Lab for Payment Security**
+Built for the **Mastercard Innovation Challenge 2026** — AI Defense Lab for Payment Security
 
-*"The best defense is understanding the offense before it happens."*
-
-[![Live Demo](https://img.shields.io/badge/🚀%20Try%20It%20Live-ai--defence--lab--for--payment--security.vercel.app-eb001b?style=for-the-badge)](https://ai-defence-lab-for-payment-security.vercel.app/)
+https://ai-defence-lab-for-payment-security.vercel.app/
 
 </div>
